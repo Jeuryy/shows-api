@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import InputSearch from './components/InputSearch';
@@ -6,7 +6,7 @@ import spin from './assets/img/tail-spin.svg'
 import Show from './components/Show';
 import { nanoid } from 'nanoid';
 import noImg from './assets/img/no-img.png'
-import { generate, count } from "random-words";
+import { generate } from "random-words";
 import Footer from './components/Footer';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         setValue(inputValue)
     }
 
-    async function getShows (e) {
+    async function getShows () {
       try {
         setQuey(value.toLowerCase())
         let api = `https://api.tvmaze.com/search/shows?q=${query}`,
@@ -36,8 +36,6 @@ function App() {
           setError(true)
           setMessage(`No matches for ${query}`)
         }
-        
-        if (!res.ok) throw { status: res.status, statusText: res.statusText}
 
         else{
             setDataElements(data.map(el =>

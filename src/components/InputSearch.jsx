@@ -4,6 +4,7 @@ import { CiSearch } from "react-icons/ci";
 
 
 export default function InputSearch(props){
+    const {loader} = props;
 
     const searchShow = (e) => {
         if (e.key === 'Enter') {
@@ -20,9 +21,9 @@ export default function InputSearch(props){
         }
     }   
 
-    useEffect((e)=> {
-        props.getShows(e);
-    }, [props.loader])
+    useEffect(()=> {
+        props.getShows();
+    }, [loader])
 
     return (
         <div className='input'>
