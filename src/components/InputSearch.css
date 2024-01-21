@@ -1,0 +1,44 @@
+.input{
+    display: flex;
+    border: 3px inset #1ca275;
+    width: 300px;
+    position: relative;
+    border-radius: 5px;
+    margin: 20px 0 5px 0;
+    background-color: #161616;
+}
+
+#input-search{
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 5px 5px 5px 5px;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    background-color: #161616;
+    letter-spacing: 1.5px;
+}
+.input-logo{
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    color: #FFF;
+    stroke-width: 1px;
+    transition:  all .3s ease;
+}
+::placeholder{
+    font-size: 13px;
+    color: #ebebebd4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width: 350px) {
+    .input{
+        width: 90%;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}

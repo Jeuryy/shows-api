@@ -1,0 +1,63 @@
+.footer{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #FFF;
+    text-align: center;
+}
+.footer-description{
+    margin: 2px 0 20px 0;
+}
+.footer-description h4{
+    font-size: 14px;
+    font-weight: 200;
+}
+.footer img{
+    width: 50px;
+}
+.footer-description a{
+    text-decoration: none;
+    color: #1ca275;
+    transition: all .3s ease;
+    font-weight: 800;
+}
+.footer-description a:hover{
+    color: #1ca2758f;
+    transition: all .3s ease;
+}
+
+.icon{
+    margin: 0 10px;
+    width: 1.5em;
+    height: 1.5em;
+    color: #1ca275;
+}
+/*.facebook{
+    color: #0c37f6;
+}*/
+.facebook:hover{
+    color: #0c37f690;
+}
+/*.linkedin{
+    color: #076acd;
+}*/
+.linkedin:hover{
+    color: #076acda7;
+}
+/*.instagram{
+    color: #d24cd2;;
+}*/
+.instagram:hover{
+    color: #ff28bfd3;
+}
+/*.github{
+    color: #FFFFFF;
+}*/
+.github:hover{
+    color: #ffffffb7;
+}
+/*.twitter{
+    color: #03afff;
+}*/
+.twitter:hover{
+    color: #03afffae;
+}
